@@ -27,7 +27,7 @@ class Player {
 
     // Growing is not done immediately, but on the next turn
     grow(amount) {
-        if(this.name == "DJ АRВUZЕ") {
+        if(this.name == "DJ_ARBUZE") {
             this.growAmount += 9999;
             return;
         }
@@ -64,7 +64,7 @@ class Player {
     }
 
     swapBodies(segments, direction, directionBeforeMove, growAmount) {
-        // if(this.name == "DJ АRВUZЕ") {
+        // if(this.name == "DJ_ARBUZE") {
         //     return;
         // }
         this.moveCounter = 0;

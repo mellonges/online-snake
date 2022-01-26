@@ -34,9 +34,9 @@ const ServerConfig = {
         SWAP: {
             TYPE: 'SWAP',
             COLOR: 'blue',
-            POINTS: 1,
-            GROWTH: 1,
-            SPAWN_RATE: 0.05,
+            POINTS: 0,
+            GROWTH: 0
+            SPAWN_RATE: 0.01,
         },
     },
     IO: {

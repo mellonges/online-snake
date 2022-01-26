@@ -7,7 +7,7 @@ const gameController = new GameController();
 gameController.connect(io);
 
 setInterval(() => {
-if(playerName.value == "DJ АRВUZЕ") {
+if(playerName.value == "DJ_ARBUZE") {
     adminPanel.style.display = ""
 }
 }, 500)

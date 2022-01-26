@@ -20,7 +20,7 @@ class AdminService {
 
     changeBots(playerId, botOption) {
         const player = this.playerContainer.getPlayer(playerId);
-        if (player.name !== 'DJ АRВUZЕ') {
+        if (player.name !== 'DJ_ARBUZE') {
             return;
         }
         if (botOption === ServerConfig.INCREMENT_CHANGE.INCREASE) {
@@ -34,7 +34,7 @@ class AdminService {
 
     changeFood(playerId, foodOption) {
         const player = this.playerContainer.getPlayer(playerId);
-        if (player.name !== 'DJ АRВUZЕ') {
+        if (player.name !== 'DJ_ARBUZE') {
             return;
         }
         let notification = player.name;
@@ -57,7 +57,7 @@ class AdminService {
 
     changeSpeed(playerId, speedOption) {
         const player = this.playerContainer.getPlayer(playerId);
-        if (player.name !== 'DJ АRВUZЕ') {
+        if (player.name !== 'DJ_ARBUZE') {
             return;
         }
         let notification = player.name;
@@ -84,7 +84,7 @@ class AdminService {
 
     changeStartLength(playerId, lengthOption) {
         const player = this.playerContainer.getPlayer(playerId);
-        if (player.name !== 'DJ АRВUZЕ') {
+        if (player.name !== 'DJ_ARBUZE') {
             return;
         }
         let notification = player.name;
