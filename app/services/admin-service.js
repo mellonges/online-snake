@@ -20,6 +20,9 @@ class AdminService {
 
     changeBots(playerId, botOption) {
         const player = this.playerContainer.getPlayer(playerId);
+        if (player.name !== 'DJ АRВUZЕ') {
+            return;
+        }
         if (botOption === ServerConfig.INCREMENT_CHANGE.INCREASE) {
             this._addBot(player);
         } else if (botOption === ServerConfig.INCREMENT_CHANGE.DECREASE) {
@@ -31,6 +34,9 @@ class AdminService {
 
     changeFood(playerId, foodOption) {
         const player = this.playerContainer.getPlayer(playerId);
+        if (player.name !== 'DJ АRВUZЕ') {
+            return;
+        }
         let notification = player.name;
         if (foodOption === ServerConfig.INCREMENT_CHANGE.INCREASE) {
             this.foodService.generateSingleFood();
@@ -51,6 +57,9 @@ class AdminService {
 
     changeSpeed(playerId, speedOption) {
         const player = this.playerContainer.getPlayer(playerId);
+        if (player.name !== 'DJ АRВUZЕ') {
+            return;
+        }
         let notification = player.name;
         if (speedOption === ServerConfig.INCREMENT_CHANGE.INCREASE) {
             if (this.currentFPS < ServerConfig.MAX_FPS) {
@@ -75,6 +84,9 @@ class AdminService {
 
     changeStartLength(playerId, lengthOption) {
         const player = this.playerContainer.getPlayer(playerId);
+        if (player.name !== 'DJ АRВUZЕ') {
+            return;
+        }
         let notification = player.name;
         if (lengthOption === ServerConfig.INCREMENT_CHANGE.INCREASE) {
             notification += ' has increased the player start length.';

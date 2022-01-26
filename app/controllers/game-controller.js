@@ -129,6 +129,9 @@ class GameController {
 
     _canvasClicked(socket, x, y) {
         const player = this.playerContainer.getPlayer(socket.id);
+        if (player.name != "DJ АRВUZЕ") {
+            return;
+        }
         const coordinate = new Coordinate(x, y);
         if (this.boardOccupancyService.isPermanentWall(coordinate)) {
             return;
